@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<table border="" cellspacing="1px" cellpadding="1px" width="300">
+			<tr>
+				<td>姓名</td>
+				<td>性别</td>
+				<td>暂住地</td>
+			</tr>
+			<tr>
+				<td>张山</td>
+				<td>男</td>
+				<td>浙江宁波</td>
+			</tr>
+			<tr>
+				<td>李四</td>
+				<td>女</td>
+				<td>浙江杭州</td>
+			</tr>
+			<tr>
+				<td>王五</td>
+				<td>男</td>
+				<td>湖南长沙</td>
+			</tr>
+		</table>
+		<script src="js/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				
+				$("button").click(function(){
+					$('tr:even').css('background-color','#abcdef')
+					$("tr:odd").css('background-color','pink')
+					$("tr:contains('湖南')").css('color','green')
+				})
+				
+			})
+			
+		</script>
+		<button>dianwo</button>
+	</body>
+</html>
